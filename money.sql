@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 04 2017 г., 15:01
+-- Время создания: Май 07 2017 г., 19:53
 -- Версия сервера: 10.1.21-MariaDB
 -- Версия PHP: 5.6.30
 
@@ -38,13 +38,8 @@ CREATE TABLE `friends` (
 --
 
 INSERT INTO `friends` (`id`, `name`, `email`, `used_id`) VALUES
-(1, 'Misha', 'mowok21@gmail.com', 0),
-(2, 'Misha', 'mowok21@gmail.com', 0),
-(3, 'Lesha', 'leha@gmail.com', 0),
-(4, 'Michael', 'doggy@inbox.lv', 0),
-(5, 'Nikita', 'fullhead@kek.lv', 0),
-(6, 'Joker', 'batmannoob@gmail.com', 0),
-(7, 'Kolya', '123@123/com', 0);
+(10, 'Mihail', 'mowok1377@gmail.com', 1),
+(11, 'Mihail', 'mowok1377@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -65,7 +60,7 @@ CREATE TABLE `loan` (
 --
 
 INSERT INTO `loan` (`id`, `amount`, `date`, `contact_id`, `active`) VALUES
-(1, 100, '2017-05-10', 1, 1);
+(7, 109, '2017-05-31', 10, 1);
 
 --
 -- Индексы сохранённых таблиц
@@ -92,12 +87,12 @@ ALTER TABLE `loan`
 -- AUTO_INCREMENT для таблицы `friends`
 --
 ALTER TABLE `friends`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT для таблицы `loan`
 --
 ALTER TABLE `loan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- Ограничения внешнего ключа сохраненных таблиц
 --
