@@ -7,6 +7,7 @@ class Friends extends \atk4\data\Model {
 		
 		$this->addField('name');
 		$this->addField('email');
+		$this->hasMany('loan');
 	}
 }
 ?>

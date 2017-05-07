@@ -5,10 +5,11 @@ class Loan extends \atk4\data\Model {
 	function init() {
 		parent::init();
 		
-		//$this->addField('type');
+		$this->addField('active');
 		$this->addField('amount');
 		$this->addField('date');
-		$this->addField('friends_id');
+		$this->addField('contact_id');
+		$this->hasOne('friends');
 	}
 }
 ?>
